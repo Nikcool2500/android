@@ -36,10 +36,14 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclBtn = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String studentNumber = "26";
+                String groupString = "БСБО-04-23";
                 String text = editText.getText().toString();
                 int length = text.length();
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        String.format("«СТУДЕНТ № %d ГРУППА %d Количество символов - %d", length, length, length),
+                        "«СТУДЕНТ № " + studentNumber +
+                                " ГРУППА " + groupString +
+                                String.format(" Количество символов - %d", length),
                         Toast.LENGTH_SHORT);
                 toast.show();
             }
