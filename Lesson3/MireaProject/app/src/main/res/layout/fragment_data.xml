@@ -1,0 +1,48 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/purple_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Информация о кибербезопасности"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кибербезопасность - это практика защиты систем, сетей и программ от цифровых атак. Эти атаки обычно направлены на получение доступа, изменение или уничтожение конфиденциальной информации, вымогательство денег у пользователей или нарушение нормальной работы бизнес-процессов."
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Основные принципы кибербезопасности:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Конфиденциальность\n2. Целостность\n3. Доступность"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
