@@ -1,9 +1,11 @@
-package com.example.mireaprojectn;
+package com.example.mireaproject;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.mireaprojectn.R;
+import com.example.mireaprojectn.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -14,7 +16,6 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mireaprojectn.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

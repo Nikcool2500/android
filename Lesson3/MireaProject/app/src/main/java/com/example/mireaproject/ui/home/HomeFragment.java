@@ -1,4 +1,4 @@
-package com.example.mireaprojectn.ui.home;
+package com.example.mireaproject.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mireaprojectn.databinding.FragmentHomeBinding;
+import com.example.mireaproject.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
