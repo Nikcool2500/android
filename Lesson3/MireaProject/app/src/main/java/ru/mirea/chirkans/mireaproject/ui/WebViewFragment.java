@@ -28,6 +28,8 @@ public class WebViewFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private WebView webView;
+
     public WebViewFragment() {
         // Required empty public constructor
     }
@@ -64,7 +66,7 @@ public class WebViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_web_view, container, false);
 
-        WebView webView = view.findViewById(R.id.webView);
+        webView = view.findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.kaspersky.ru/resource-center/definitions/what-is-cyber-security");
 

@@ -60,16 +60,4 @@ public class MainActivity extends AppCompatActivity {
         intent.setType("*/*");
         imageActivityResultLauncher.launch(intent);
     }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == PICK_FILE_REQUEST && resultCode == RESULT_OK) {
-            if (data != null && data.getData() != null) {
-                Uri selectedFileUri = data.getData();
-                Log.d("MainActivity", "Selected file URI (old way): " + selectedFileUri.toString());
-            }
-        }
-    }
 }

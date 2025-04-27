@@ -23,7 +23,6 @@ public class ShareActivity extends AppCompatActivity {
         EditText editTextUserQuote = findViewById(R.id.editTextUserQuote);
         Button btnSendData = findViewById(R.id.btnSendData);
 
-        // Получаем данные из MainActivity
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String bookName = extras.getString(MainActivity.BOOK_NAME_KEY);
