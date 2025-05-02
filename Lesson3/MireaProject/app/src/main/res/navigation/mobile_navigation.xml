@@ -25,7 +25,25 @@
 
     <fragment
         android:id="@+id/nav_worker"
-        android:name="ru.mirea.chirkans.mireaproject.BackgroundTaskFragment"
+        android:name="ru.mirea.chirkans.mireaproject.ui.BackgroundTaskFragment"
         android:label="Воркер"
         tools:layout="@layout/fragment_background_task" />
+
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ru.mirea.chirkans.mireaproject.ui.CompassFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_compass" />
+
+    <fragment
+        android:id="@+id/nav_collage"
+        android:name="ru.mirea.chirkans.mireaproject.ui.CollageFragment"
+        android:label="Фото-коллаж"
+        tools:layout="@layout/fragment_collage" />
+
+    <fragment
+        android:id="@+id/nav_voice"
+        android:name="ru.mirea.chirkans.mireaproject.ui.VoiceNotesFragment"
+        android:label="Голосовые заметки"
+        tools:layout="@layout/fragment_voice_notes" />
 </navigation>

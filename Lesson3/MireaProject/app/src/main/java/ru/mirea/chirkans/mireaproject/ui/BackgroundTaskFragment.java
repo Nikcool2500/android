@@ -1,4 +1,4 @@
-package ru.mirea.chirkans.mireaproject;
+package ru.mirea.chirkans.mireaproject.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import ru.mirea.chirkans.mireaproject.R;
 
 public class BackgroundTaskFragment extends Fragment {
 

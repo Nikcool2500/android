@@ -1,12 +1,10 @@
-package ru.mirea.chirkans.mireaproject;
+package ru.mirea.chirkans.mireaproject.ui;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 import java.util.concurrent.TimeUnit;
-
-import javax.xml.transform.Result;
 
 public class DataProcessorWorker extends Worker {
     private static final String TAG = "DataProcessor";
