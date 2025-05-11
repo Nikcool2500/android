@@ -46,4 +46,16 @@
         android:name="ru.mirea.chirkans.mireaproject.ui.VoiceNotesFragment"
         android:label="Голосовые заметки"
         tools:layout="@layout/fragment_voice_notes" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.chirkans.mireaproject.ui.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_converter"
+        android:name="ru.mirea.chirkans.mireaproject.ui.FileManagerFragment"
+        android:label="Конвертер"
+        tools:layout="@layout/fragment_file_manager" />
 </navigation>

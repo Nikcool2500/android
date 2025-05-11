@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Менеджер документов"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ваши документы:"
+        android:layout_below="@id/sectionTitle"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/documentsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/sectionTitle"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/previewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотр:"
+        android:layout_below="@id/documentsRecycler"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/previewScroll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/previewHeader"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/documentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/toggleFormatBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить формат"
+        android:layout_below="@id/previewScroll"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createDocumentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_menu_add"/>
+</RelativeLayout>
