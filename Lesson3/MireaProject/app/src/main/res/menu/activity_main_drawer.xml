@@ -48,5 +48,9 @@
             android:id="@+id/nav_converter"
             android:icon="@drawable/ic_converter"
             android:title="Конвертер" />
+        <item
+            android:id="@+id/nav_firebase"
+            android:icon="@drawable/ic_firebase_icon"
+            android:title="FireBase" />
     </group>
 </menu>

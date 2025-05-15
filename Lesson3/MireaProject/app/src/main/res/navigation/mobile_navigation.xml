@@ -58,4 +58,9 @@
         android:name="ru.mirea.chirkans.mireaproject.ui.FileManagerFragment"
         android:label="Конвертер"
         tools:layout="@layout/fragment_file_manager" />
+    <fragment
+        android:id="@+id/nav_firebase"
+        android:name="ru.mirea.chirkans.mireaproject.ui.FirebaseFragment"
+        android:label="FireBase"
+        tools:layout="@layout/fragment_firebase" />
 </navigation>
