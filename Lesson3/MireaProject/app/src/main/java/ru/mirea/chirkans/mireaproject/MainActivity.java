@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_data, R.id.nav_web_view, R.id.nav_worker, R.id.nav_compass,
-                R.id.nav_collage, R.id.nav_voice, R.id.nav_profile, R.id.nav_converter,R.id.nav_firebase)
+                R.id.nav_collage, R.id.nav_voice, R.id.nav_profile, R.id.nav_converter,R.id.nav_firebase,
+                R.id.nav_place)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

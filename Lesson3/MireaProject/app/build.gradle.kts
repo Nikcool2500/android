@@ -8,6 +8,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId = "ru.mirea.chirkans.mireaproject"
         minSdk = 26
         targetSdk = 35
@@ -36,6 +37,9 @@ android {
 }
 
 dependencies {
+    implementation("org.osmdroid:osmdroid-android:6.1.16")
+    // библиотека для хранения данных SharedPreferences
+    implementation("androidx.preference:preference:1.2.0")
     implementation("com.google.firebase:firebase-auth:22.3.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")

@@ -12,4 +12,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unknown_error_message">Неизвестная ошибка</string>
+    <string name="remote_error_message">Ошибка сервера</string>
+    <string name="network_error_message">Ошибка сети</string>
 </resources>

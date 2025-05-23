@@ -34,36 +34,29 @@ public class BackgroundTaskFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Инициализация элементов
         progressBar = view.findViewById(R.id.progress_bar);
         tvStatus = view.findViewById(R.id.tv_status);
         Button btnStart = view.findViewById(R.id.btn_start);
         workManager = WorkManager.getInstance(requireContext());
 
-        // Обработчик кнопки
         btnStart.setOnClickListener(v -> startDataProcessing());
     }
 
     private void startDataProcessing() {
-        // Настройка ограничений
         Constraints constraints = new Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .setRequiresBatteryNotLow(true)
                 .build();
 
-        // Создание запроса
         OneTimeWorkRequest workRequest = new OneTimeWorkRequest.Builder(DataProcessorWorker.class)
                 .setConstraints(constraints)
                 .build();
 
-        // Визуальные изменения
         progressBar.setVisibility(View.VISIBLE);
         tvStatus.setText("Status: Initializing...");
 
-        // Запуск задачи
         workManager.enqueue(workRequest);
 
-        // Отслеживание статуса
         workManager.getWorkInfoByIdLiveData(workRequest.getId())
                 .observe(getViewLifecycleOwner(), workInfo -> {
                     if (workInfo != null) {

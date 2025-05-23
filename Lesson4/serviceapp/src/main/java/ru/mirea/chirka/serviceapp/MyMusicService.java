@@ -35,7 +35,7 @@ public class MyMusicService extends Service {
                 .setContentTitle("MyMusicService")
                 .setContentText("Воспроизводится трек: Carpenter Brut : Turbo Killer")
                 .setSmallIcon(R.drawable.ic_music_note)
-                .setPriority(NotificationCompat.PRIORITY_LOW) // менее навязчивое уведомление
+                .setPriority(NotificationCompat.PRIORITY_LOW)
                 .build();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {

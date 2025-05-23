@@ -45,7 +45,6 @@ public class CompassFragment extends Fragment implements SensorEventListener {
 
     private void setupViews(View root) {
         compassImage = root.findViewById(R.id.compass_image);
-        // Устанавливаем точку вращения в центр изображения
         compassImage.post(() -> {
             compassImage.setPivotX(compassImage.getWidth() / 2f);
             compassImage.setPivotY(compassImage.getHeight() / 2f);

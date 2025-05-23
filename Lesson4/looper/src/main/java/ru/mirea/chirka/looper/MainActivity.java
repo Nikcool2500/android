@@ -17,11 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText occupationInput;
     private Button sendButton;
 
-    // Handler для приёма ответов из MyLooper
     private Handler mainHandler = new Handler(msg -> {
         Bundle data = msg.getData();
         String result = data.getString("result");
-        // Выводим результат в лог
         Log.d(TAG, result);
         return true;
     });
@@ -37,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         occupationInput = findViewById(R.id.occupationInput);
         sendButton = findViewById(R.id.sendButton);
 
-        // Запускаем поток с собственным Looper
         myLooper = new MyLooper(mainHandler);
         myLooper.start();
 
